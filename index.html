@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculo Bônus desempenho</title>
+</head>
+
+<body>
+
+    <header id="cabecalho">
+        <nav>
+            <div class="logo"> Cálculo Bônus</div>
+
+            <ul class="menu">
+                <li> Bônus Estado ES</li>
+                <!-- <li> Bônus PMV ES</li> -->
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Calcule seu Bônus desempenho</h1>
+        <section class="calculadora">
+            <!--Fórmula: salário * 1,5 * IMU -->
+
+            <div class="estado">
+                <h2>Calculadora Estado ES</h2>
+                <input id="inSalario" type="number" placeholder="Salário Ex: 2700.00">
+                <input id="inImu" type="number" placeholder="Percentual do IMU Ex: 75">
+                <button id="btCalcular">Calcular</button>
+                <button id="btApagar">Apagar</button>
+
+                <h2 id="outResultado" class="resultado"></h2>
+
+
+            </div>
+
+            <!-- <div class="prefeitura-vitoria"> -->
+            <!--Fórmula : salário x 1,5 x IMU x ICD x FVA -->
+
+            <!--Tabela IDEM
+                            a) IDEM de 0,00, o IMU será de 0%;
+                            b) abaixo de 17,5448, o IMU será de 30%;
+                            c) IDEM de 17,5449 a 20,5671, o IMU será de 33,5%;
+                            d) IDEM de 20,5672 a 23,5894, o IMU será de 37,0%;
+                            e) IDEM de 23,5895 a 26,6117, o IMU será de 40,5%;
+                            f) IDEM de 26,6118 a 29,6340, o IMU será de 44,0%;
+                            g) IDEM de 29,6341 a 32,6563, o IMU será de 47,5%;
+                            h) IDEM de 32,6564 a 35,6786, o IMU será de 51,0%;
+                            i) IDEM de 35,6787 a 38,7009, o IMU será de 54,5%;
+                            j) IDEM de 38,7010 a 41,7233, o IMU será de 58,0%;
+                            k) IDEM de 41,7234 a 44,7456, o IMU será de 61,5%;
+                            l) IDEM de 44,7457 a 47,7679, o IMU será de 65,0%;
+                            m) IDEM de 47,7680 a 50,7902, o IMU será de 68,5%;
+                            n) IDEM de 50,7903 a 53,8125, o IMU será de 72,0%;
+                            o) IDEM de 53,8126 a 56,8348, o IMU será de 75,5%;
+                            p) IDEM de 56,8349 a 59,8571, o IMU será de 79,0%;
+                            q) IDEM de 59,8572 a 62,8794, o IMU será de 82,5%;
+                            r) IDEM de 62,8795 a 65,9017, o IMU será de 86,0%;
+                            s) IDEM de 65,9018 a 68,9240, o IMU será de 89,5%;
+                            t) IDEM de 68,9241 a 71,9463, o IMU será de 93,0%;
+                            u) IDEM de 71,9464 a 74,9686, o IMU será de 96,5%;
+                            v) IDEM de 74,9687 a 100,0000, o IMU será de 100,0%;
+                    -->
+
+            <!-- <h2>Calculadora PMV - Prefeiruta Municipal de Vitória</h2>
+                <input type="text" placeholder="Salário">
+                <input type="text" placeholder="IMU">
+                <input type="text" placeholder="ICD">
+                <input type="text" placeholder="FVA">
+                <button>Calcular</button>
+
+                <h2 class="resultado"></h2>
+            </div> -->
+
+        </section>
+
+
+        <section class="informações">
+            <h2>Leis do Bônus Desempenho</h2>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nemo quod tempora consectetur error
+                beatae repellat veritatis facere labore dolorem tenetur, impedit id vitae eligendi velit eum odio
+                repudiandae itaque.</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, laboriosam porro dolorem nihil sequi et,
+                numquam est, necessitatibus fuga officiis non. Suscipit adipisci excepturi, deserunt tempore quisquam
+                optio? Explicabo, eligendi.</p>
+        </section>
+
+        <footer id="rodape">
+            <!-- <h3> Redes Sociais</h3> -->
+            <ul>
+                <!-- <a href="#">
+                    <li><img src="assets/instagram_icon.png" width="20px"> Instagram</li>
+                </a>
+                <a href="#">
+                    <li><img src="assets/fb_icon.svg" width="20px"> Facebook</li>
+                </a> -->
+            </ul>
+            <p> &copy; Copyright 2021 by - Raylander Guimarães</p>
+        </footer>
+
+    </main>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
