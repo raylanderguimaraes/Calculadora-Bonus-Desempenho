@@ -31,7 +31,7 @@
             <div class="estado">
                 <h2>Calculadora Estado ES</h2>
                 <input id="inSalario" type="number" placeholder="Salário Ex: 2700.00">
-                <input id="inImu" type="number" placeholder="Percentual do IMU Ex: 75">
+                <input id="inImu" type="number" placeholder="IMU Ex: 75">
                 <button id="btCalcular">Calcular</button>
                 <button id="btApagar">Apagar</button>
 
@@ -73,13 +73,13 @@
 
 
                 <h2>Calculadora PMV - Prefeiruta Municipal de Vitória</h2>
-                <input type="text" placeholder="Salário">
-                <input type="text" placeholder="IMU">
-                <input type="text" placeholder="ICD">
-                <input type="text" placeholder="FVA">
-                <button>Calcular</button>
+                <input id="inSalarioPmv" type="number" placeholder="Salário Ex: 2700.00">
+                <input id="inImuPmv" type="number" placeholder="IMU Ex: 75">
+                <input id="inIcdPmv" type="number" min="0" max="1" placeholder="ICD : 0 ou 1">
+                <input id="inFvaPmv" type="number" placeholder="FVA, Ex: 90">
+                <button id="btCalcularPmv">Calcular</button>
 
-                <h2 class="resultado"></h2>
+                <h2 id="outResultadoPmv" class="resultado"></h2>
 
         </section>
 
