@@ -31,6 +31,7 @@ main {
     padding: 30px;
     border-radius: 10px;
     margin: auto;
+    margin-top: 20px;
 }
 
 input {
