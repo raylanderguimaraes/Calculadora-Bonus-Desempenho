@@ -14,16 +14,19 @@ function calcularBonus() {
     let imu = (inImu.value / 100);
     // calcular o valor
     let bonusCalculado = (salario * 1.5 * imu);
+    let dinheiro1 = bonusCalculado.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
     // referenciar o resultado
     let outResultado = document.getElementById("outResultado");
 
     // modificar resultado de saida
-    outResultado.textContent = "O Valor do bônus à receber é de: R$ " + bonusCalculado.toFixed(2);
+
 
     if (salario == 0 || imu == 0) {
         alert("Preencha todos os campos");
         outResultado.textContent = "";
+    } else {
+        outResultado.textContent = "O Valor do bônus à receber é de: " + dinheiro1;
     }
 }
 
@@ -45,18 +48,25 @@ function calcularBonusPmv() {
     // calcular bônus
     //salário x 1,5 x IMU x ICD x FVA
     let bonusPmvCalculado = (salarioPmv * 1.5 * imuPmv * icdPmv * fvaPmv)
+    let dinheiro2 = bonusPmvCalculado.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
     // referenciar o resultado PMV
     let outResultadoPmv = document.getElementById("outResultadoPmv")
 
     //modificar o resultado de saída PMV
-    outResultadoPmv.textContent = "O Valor do bônus à receber é de: R$ " + bonusPmvCalculado.toFixed(2);
-    if (salarioPmv == 0 || imu == 0) {
+
+    if (salarioPmv == 0 || imuPmv == 0) {
 
         alert("Preencha todos os campos");
         outResultadoPmv.textContent = " ";
 
+    } else if (icdPmv == 0 || fvaPmv == 0) {
+        alert("Preencha todos os campos");
+        outResultadoPmv.textContent = " ";
+    } else {
+        outResultadoPmv.textContent = "O Valor do bônus à receber é de: " + dinheiro2;
     }
+
 
 }
 
