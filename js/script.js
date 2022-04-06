@@ -1,4 +1,5 @@
 // referenciar todos os campos de entrada
+
 let inSalario = document.getElementById("inSalario");
 let inImu = document.getElementById("inImu");
 
@@ -69,6 +70,31 @@ function calcularBonusPmv() {
 
 
 }
+
+// Funcionalidade para alternar calculadoras
+let btnMudar = document.getElementById("btnMudar");
+btnMudar.addEventListener("click", changeCalculator);
+
+
+function changeCalculator() {
+
+
+    let calculadoraEs = document.getElementById("calculadora-es");
+    let calculadoraPmv = document.getElementById("calculadora-pmv");
+
+    if (calculadoraPmv.style.display === "none") {
+        calculadoraPmv.style.display = "block";
+        calculadoraEs.style.display = "none"
+    } else {
+        calculadoraPmv.style.display = "none";
+        calculadoraEs.style.display = "block";
+    }
+
+
+}
+
+
+
 
 
 
