@@ -11,13 +11,13 @@
 
 <body>
 
-    <header id="cabecalho">
-        <nav>
-            <div class="logo"> Cálculo Bônus</div>
+    <header class="cabecalho">
+        <nav class="menu">
+            <div class="logo"> Cálculo Bônus Desempenho</div>
 
-            <ul class="menu">
-                <li> Bônus Estado ES</li>
-                <!-- <li> Bônus PMV ES</li> -->
+            <ul>
+            <a href="#calculadora-es" onclick="abreES()"><li> Bônus Estado ES</li></a>
+               <a href="#calculadora-pmv" onclick="abrePmv()"><li> Bônus PMV</li></a>
             </ul>
 
         </nav>
@@ -82,7 +82,7 @@
                 <button id="btCalcularPmv">Calcular</button>
                 <!-- <button id="btApagar2">Apagar</button> -->
                 <button class="btApagarTeste">Apagar</button>
-                
+
 
                 <h2 id="outResultadoPmv" class="resultado"></h2>
 

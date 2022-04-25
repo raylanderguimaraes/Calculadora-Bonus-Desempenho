@@ -1,20 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@300;400;700&display=swap');
+
+
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: beige;
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
 
 }
+
+/*Formatação Header e Menu */
+
+.cabecalho {
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(82, 17, 82);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: rgb(226, 226, 12);
+    transition-duration: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Formatação Parte Principal */
 
 h2 {
     text-align: center;
+    color: whitesmoke;
+    font-size: 2rem;
+
 }
 
-#cabecalho {
-    background-color: lightgreen;
-}
+
 
 
 main {
@@ -23,7 +87,7 @@ main {
 }
 
 .calculadora {
-    background-color: lightgreen;
+    background-color: rgb(82, 17, 82);
     color: #000;
     max-width: 600px;
     height: auto;
@@ -36,7 +100,7 @@ main {
 }
 
 .active {
-    background-color: lightgreen;
+    background-color: rgb(82, 17, 82);
     color: #000;
     max-width: 600px;
     height: auto;
@@ -46,12 +110,13 @@ main {
     margin-top: 20px;
     display: block;
 
+
 }
 
 
 
 
-
+/*Formatação Inputs */
 
 input {
     display: block;
@@ -61,7 +126,8 @@ input {
     box-sizing: border-box;
 }
 
+/* Formatação Resultado */
 .resultado {
     margin-top: 10px;
-    color: red;
+    color: rgb(226, 226, 12);
 }

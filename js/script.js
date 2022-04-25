@@ -38,7 +38,7 @@ function calcularBonus() {
 function apagarResultado() {
     outResultado.textContent = " "
     outResultadoPmv.textContent = " "
-
+    
 }
 
 
@@ -86,6 +86,17 @@ function changeCalculator() {
 };
 
 
+// Esta parte está funcionando, porém pesquisar uma forma melhor de fazer essa troca.
+function abrePmv() {
+    calculadoraPmv.classList.add("active");
+    calculadoraEs.classList.remove("active");
+}
+
+function abreES() {
+    calculadoraEs.classList.add("active");
+    calculadoraPmv.classList.remove("active");
+    
+}
 
 // referenciar os botões
 let calcular = document.getElementById("btCalcular");
@@ -98,6 +109,9 @@ calcularPmv.addEventListener("click", calcularBonusPmv);
 let apagar = document.getElementsByClassName("btApagarTeste")
 apagar[0].addEventListener("click", apagarResultado);
 apagar[1].addEventListener("click", apagarResultado);
+
+
+
 
 
 
