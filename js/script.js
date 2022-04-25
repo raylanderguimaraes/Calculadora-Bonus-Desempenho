@@ -1,3 +1,7 @@
+let calculadoraEs = document.getElementById("calculadora-es");
+let calculadoraPmv = document.getElementById("calculadora-pmv");
+
+
 // referenciar todos os campos de entrada
 
 let inSalario = document.getElementById("inSalario");
@@ -32,9 +36,8 @@ function calcularBonus() {
 }
 
 function apagarResultado() {
-
     outResultado.textContent = " "
-
+    outResultadoPmv.textContent = " "
 
 }
 
@@ -75,27 +78,12 @@ function calcularBonusPmv() {
 let btnMudar = document.getElementById("btnMudar");
 btnMudar.addEventListener("click", changeCalculator);
 
+calculadoraEs.classList.add("active");
 
 function changeCalculator() {
-
-
-    let calculadoraEs = document.getElementById("calculadora-es");
-    let calculadoraPmv = document.getElementById("calculadora-pmv");
-
-    if (calculadoraPmv.style.display === "none") {
-        calculadoraPmv.style.display = "block";
-        calculadoraEs.style.display = "none"
-    } else {
-        calculadoraPmv.style.display = "none";
-        calculadoraEs.style.display = "block";
-    }
-
-
-}
-
-
-
-
+    calculadoraPmv.classList.toggle("active");
+    calculadoraEs.classList.toggle("active");
+};
 
 
 
@@ -106,8 +94,11 @@ let calcularPmv = document.getElementById("btCalcularPmv");
 calcularPmv.addEventListener("click", calcularBonusPmv);
 
 
-let apagar = document.getElementById("btApagar");
-apagar.addEventListener("click", apagarResultado);
+
+let apagar = document.getElementsByClassName("btApagarTeste")
+apagar[0].addEventListener("click", apagarResultado);
+apagar[1].addEventListener("click", apagarResultado);
+
 
 
 

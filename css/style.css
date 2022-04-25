@@ -5,7 +5,7 @@
 
 body {
     background-color: beige;
-    
+
 }
 
 h2 {
@@ -18,13 +18,12 @@ h2 {
 
 
 main {
-    
+
     width: 100%;
 }
 
 .calculadora {
-    
-    background-color: lightgreen; 
+    background-color: lightgreen;
     color: #000;
     max-width: 600px;
     height: auto;
@@ -32,13 +31,26 @@ main {
     border-radius: 10px;
     margin: auto;
     margin-top: 20px;
-}
-
-
-
-#calculadora-pmv {
     display: none;
+
 }
+
+.active {
+    background-color: lightgreen;
+    color: #000;
+    max-width: 600px;
+    height: auto;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+
+}
+
+
+
+
 
 
 input {
@@ -53,4 +65,3 @@ input {
     margin-top: 10px;
     color: red;
 }
-
