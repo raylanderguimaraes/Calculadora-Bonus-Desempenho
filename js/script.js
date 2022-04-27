@@ -20,13 +20,13 @@ function calcularBonus() {
     // calcular o valor
     let bonusCalculado = (salario * 1.5 * imu);
     let dinheiro1 = bonusCalculado.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
-
+    
     // referenciar o resultado
     let outResultado = document.getElementById("outResultado");
-
+    
     // modificar resultado de saida
-
-
+    
+    
     if (salario == 0 || imu == 0) {
         alert("Preencha todos os campos");
         outResultado.textContent = "";
@@ -38,7 +38,17 @@ function calcularBonus() {
 function apagarResultado() {
     outResultado.textContent = " "
     outResultadoPmv.textContent = " "
+    limparCampos();
     
+    
+}
+
+function limparCampos() {
+   let campos = document.getElementsByTagName("input")
+    for(campo of campos) {
+        campo.value = '';
+    }
+
 }
 
 
@@ -95,7 +105,7 @@ function abrePmv() {
 function abreES() {
     calculadoraEs.classList.add("active");
     calculadoraPmv.classList.remove("active");
-    
+
 }
 
 // referenciar os botões
