@@ -16,10 +16,10 @@
             <div class="logo"> Cálculo Bônus Desempenho</div>
 
             <ul>
-                <a href="#calculadora-es" onclick="abreES()">
+                <a onclick="abreES()">
                     <li> Bônus Estado ES</li>
                 </a>
-                <a href="#calculadora-pmv" onclick="abrePmv()">
+                <a onclick="abrePmv()">
                     <li> Bônus PMV</li>
                 </a>
             </ul>
@@ -27,9 +27,10 @@
         </nav>
     </header>
 
-    <main>
-        <button id="btnMudar">Alternar Calculadora</button>
-        <h1>Calcule seu Bônus desempenho</h1>
+    <main class="container">
+
+
+        <h1>Cálculo Bônus Desempenho Magistério</h1>
         <section id="calculadora-es" class="calculadora">
             <!--Fórmula: salário * 1,5 * IMU -->
 
@@ -40,6 +41,7 @@
                 <button id="btCalcular">Calcular</button>
                 <!-- <button id="btApagar">Apagar</button> -->
                 <button class="btApagarTeste">Apagar</button>
+
 
                 <h2 id="outResultado" class="resultado"></h2>
 
@@ -78,7 +80,7 @@
                     -->
 
 
-                <h2>Calculadora PMV - Prefeiruta Municipal de Vitória</h2>
+                <h2>Calculadora PMV - Prefeitura Municipal de Vitória</h2>
                 <input id="inSalarioPmv" type="number" placeholder="Salário Ex: 2700.00">
                 <input id="inImuPmv" type="number" placeholder="IMU Ex: 75">
                 <input id="inIcdPmv" type="number" min="0" max="1" placeholder="ICD : 0 ou 1">
@@ -90,10 +92,12 @@
 
                 <h2 id="outResultadoPmv" class="resultado"></h2>
 
+
+
         </section>
 
-
-        <section class="informações">
+        <button id="btnMudar">Alternar Calculadora</button>
+        <section class="informacoes">
             <h2>Leis do Bônus Desempenho</h2>
 
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nemo quod tempora consectetur error
@@ -120,6 +124,9 @@
         </ul>
         <p> &copy; Copyright 2022 by - Raylander Guimarães</p>
     </footer>
+
+
+
 
 
 

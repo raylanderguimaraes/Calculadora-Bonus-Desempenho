@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@300;400;700&display=swap');
 
+/* <a href='https://br.freepik.com/fotos-vetores-gratis/custo'>Custo vetor criado por jcomp - br.freepik.com</a> */
+
 
 
 
@@ -9,11 +11,21 @@
 }
 
 body {
-    background-color: #000;
-    color: #ffffff;
+    color: rgb(82, 17, 82);
     font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/Mar-Business_11.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
+
+
+
+
+
 
 /*Formatação Header e Menu */
 
@@ -25,6 +37,7 @@ body {
     padding: 10px;
     display: flex;
     align-items: center;
+
 }
 
 .menu {
@@ -38,6 +51,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
+    color: whitesmoke;
 }
 
 .menu ul {
@@ -45,6 +59,7 @@ body {
     display: flex;
     gap: 30px;
 }
+
 .menu a {
     text-decoration: none;
     color: #ffffff;
@@ -65,29 +80,29 @@ body {
 
 
 
-
-
-
-
 /* Formatação Parte Principal */
+
+
+h1 {
+    text-align: center;
+    color: rgb(82, 17, 82);
+    font-size: 3rem;
+    margin-top: 3rem;
+
+}
 
 h2 {
     text-align: center;
-    color: whitesmoke;
+    color: rgb(82, 17, 82);
     font-size: 2rem;
 
 }
 
 
 
-
-main {
-
-    width: 100%;
-}
-
 .calculadora {
     background-color: rgb(82, 17, 82);
+    box-shadow: 1px 4px 4px 4px rgb(34, 33, 33);
     color: #000;
     max-width: 600px;
     height: auto;
@@ -97,6 +112,10 @@ main {
     margin-top: 20px;
     display: none;
 
+}
+
+.calculadora h2 {
+    color: whitesmoke;
 }
 
 .active {
@@ -123,6 +142,8 @@ input {
     width: 100%;
     padding: 8px;
     margin-bottom: 5px;
+    border-radius: 8px;
+    border: none;
     box-sizing: border-box;
 }
 
@@ -131,3 +152,20 @@ input {
     margin-top: 10px;
     color: rgb(226, 226, 12);
 }
+
+
+
+/* Formatação Informações */
+
+.informacoes {
+    margin-top: 20px;
+}
+
+
+
+
+/* Formatação Botões */
+
+
+
+
