@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@300;400;700&display=swap');
 
-/* <a href='https://br.freepik.com/fotos-vetores-gratis/custo'>Custo vetor criado por jcomp - br.freepik.com</a> */
-
-
-
 
 * {
     margin: 0;
@@ -21,11 +17,6 @@ body {
     background-size: cover;
 
 }
-
-
-
-
-
 
 /*Formatação Header e Menu */
 
@@ -74,12 +65,6 @@ body {
     transition-duration: .5s;
 }
 
-
-
-
-
-
-
 /* Formatação Parte Principal */
 
 
@@ -116,6 +101,7 @@ h2 {
 
 .calculadora h2 {
     color: whitesmoke;
+    margin-bottom: 1.2rem;
 }
 
 .active {
@@ -131,9 +117,6 @@ h2 {
 
 
 }
-
-
-
 
 /*Formatação Inputs */
 
@@ -158,14 +141,116 @@ input {
 /* Formatação Informações */
 
 .informacoes {
-    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+    text-align: justify;
 }
 
+.informacoes p {
+    font-size: 18px;
+    font-weight: 500;
 
 
+
+}
 
 /* Formatação Botões */
 
+.btnToggle {
+    width: 180px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#btnMudar {
+    width: 100%;
+    background-color: rgb(226, 226, 12);
+    padding: 8px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+#btnMudar:hover {
+    width: 100%;
+    background-color: whitesmoke;
+    color: rgb(82, 17, 82);
+    transition: .8s;
+    padding: 8px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btnsFuncoes {
+    max-width: 600px;
+    height: auto;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.btnsFuncoes button {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 226, 12);
+    padding: 8px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.btnsFuncoes button:hover {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    color: rgb(82, 17, 82);
+    padding: 8px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: .8s;
 
 
+}
 
+/*Formatação Rodapé */
+
+#rodape {
+    text-align: center;
+    margin-top: 30px;
+    padding: 18px;
+}
+
+
+span a {
+
+    color: rgb(82, 17, 82);
+    cursor: pointer;
+}

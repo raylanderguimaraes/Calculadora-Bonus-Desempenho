@@ -116,7 +116,7 @@ calcularPmv.addEventListener("click", calcularBonusPmv);
 
 
 
-let apagar = document.getElementsByClassName("btApagarTeste")
+let apagar = document.getElementsByClassName("btnApagar")
 apagar[0].addEventListener("click", apagarResultado);
 apagar[1].addEventListener("click", apagarResultado);
 
