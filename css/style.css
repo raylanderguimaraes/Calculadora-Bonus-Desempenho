@@ -181,17 +181,11 @@ input {
     cursor: pointer;
 }
 
-#btnMudar:hover {
-    width: 100%;
+#btnMudar:hover {  
     background-color: whitesmoke;
     color: rgb(82, 17, 82);
     transition: .8s;
-    padding: 8px;
-    margin: 10px;
-    font-size: 18px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
+   
 }
 
 .btnsFuncoes {
@@ -223,23 +217,9 @@ input {
 }
 
 .btnsFuncoes button:hover {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: whitesmoke;
     color: rgb(82, 17, 82);
-    padding: 8px;
-    margin: 10px;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
     transition: .8s;
-
-
 }
 
 /*Formatação Rodapé */
