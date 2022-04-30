@@ -11,7 +11,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     height: 100vh;
-    background-image: url("https://br.freepik.com/vetores-gratis/os-funcionarios-do-departamento-financeiro-estao-calculando-as-despesas-dos-negocios-da-empresa_13744786.htm#query=dinheiro&position=19&from_view=search");
+    background-image: url('/assets/bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
