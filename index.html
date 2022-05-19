@@ -6,25 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Calculo Bônus desempenho</title>
+    <title>Cálculo Bônus desempenho</title>
 </head>
 
 <body>
 
-    <header class="cabecalho">
-        <nav class="menu">
+    <header id="menu">
+        <div class="cabecalho">
             <div class="logo"> Cálculo Bônus Desempenho</div>
+            <div id="navigation">
+                <nav class="navigation-menu">
+                    <button id="btn-mobile">Menu <span id="hamburger"></span></button>
 
-            <ul>
-                <a onclick="abreES()">
-                    <li> Bônus Estado ES</li>
-                </a>
-                <a onclick="abrePmv()">
-                    <li> Bônus PMV</li>
-                </a>
-            </ul>
+                    <ul>
+                        <a onclick="abreES()">
+                            <li> Bônus Estado ES</li>
+                        </a>
+                        <a onclick="abrePmv()">
+                            <li> Bônus PMV</li>
+                        </a>
+                    </ul>
 
-        </nav>
+                </nav>
+            </div>
+
+
+
+        </div>
     </header>
 
     <main class="container">
@@ -121,9 +129,13 @@
 
         <div class="informacoes">
             <h2>Leis do Bônus Desempenho</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit perferendis corporis animi, libero totam in reiciendis voluptates praesentium magnam minima, beatae perspiciatis quos minus repudiandae voluptas? Rem, perferendis veniam.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit perferendis corporis animi, libero
+                totam in reiciendis voluptates praesentium magnam minima, beatae perspiciatis quos minus repudiandae
+                voluptas? Rem, perferendis veniam.</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquam rem ut, possimus nulla delectus saepe labore. Ratione veniam est molestiae quam vitae? Eveniet provident quibusdam accusamus veritatis cumque reprehenderit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aliquam rem ut, possimus nulla delectus
+                saepe labore. Ratione veniam est molestiae quam vitae? Eveniet provident quibusdam accusamus veritatis
+                cumque reprehenderit.</p>
         </div>
 
 
@@ -146,11 +158,6 @@
         </span>
         <p> &copy; Copyright 2022 by - Raylander Guimarães</p>
     </footer>
-
-
-
-
-
 
 
     <script src="./js/script.js"></script>
