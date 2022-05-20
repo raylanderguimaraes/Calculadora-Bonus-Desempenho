@@ -13,7 +13,7 @@ let inIcdPmv = document.getElementById("inIcdPmv");
 let inFvaPmv = document.getElementById("inFvaPmv");
 
 
-function calcularBonus() {
+function calcularBonus(event) {
     // pegar valor dos input
     let salario = inSalario.value;
     let imu = (inImu.value / 100);
@@ -33,6 +33,8 @@ function calcularBonus() {
     } else {
         outResultado.textContent = "O Valor do bônus à receber é de: " + dinheiro1;
     }
+
+    if (event.type === 'touchstart') event.preventDefault();
 }
 
 function apagarResultado() {
@@ -52,7 +54,7 @@ function limparCampos() {
 }
 
 
-function calcularBonusPmv() {
+function calcularBonusPmv(event) {
     // pegar valor dos input
     let salarioPmv = inSalarioPmv.value;
     let imuPmv = (inImuPmv.value / 100);
@@ -80,6 +82,8 @@ function calcularBonusPmv() {
     } else {
         outResultadoPmv.textContent = "O Valor do bônus à receber é de: " + dinheiro2;
     }
+
+    if (event.type === 'touchstart') event.preventDefault();
 
 
 }
