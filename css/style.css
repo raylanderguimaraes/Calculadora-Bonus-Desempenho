@@ -22,9 +22,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
-
+    /* object-fit: cover; */
 }
 
 
@@ -32,15 +30,17 @@ body {
 /*Formatação Header e Menu */
 #menu {
     width: 100%;
+    height: 70px;
     display: flex;
+    background-color: rgb(82, 17, 82);
+    
+   
 
 }
 
 .cabecalho {
     box-sizing: border-box;
     width: 100%;
-    height: 70px;
-    background-color: rgb(82, 17, 82);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -113,7 +113,7 @@ h2 {
     margin: auto;
     margin-top: 20px;
     display: none;
-    
+
 }
 
 
@@ -233,7 +233,7 @@ input {
     border: none;
     cursor: pointer;
 
-    
+
 
 }
 
@@ -264,12 +264,17 @@ span a {
 
     #menu {
         width: 100%;
-        margin-top: 0;
+        height: 70px;
+        position: fixed;
+        top: 0;
+
         display: flex;
 
     }
 
     .cabecalho {
+        
+        margin-top: 0;
         position: fixed;
         justify-content: space-between;
         z-index: 100;
@@ -286,6 +291,7 @@ span a {
 
     .container {
         margin-top: 7rem;
+        padding: 0 20px;
     }
 
 
