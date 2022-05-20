@@ -91,7 +91,8 @@ btnMudar.addEventListener("touchstart", changeCalculator);
 
 calculadoraEs.classList.add("active");
 
-function changeCalculator() {
+function changeCalculator(event) {
+    if(event.type === "touchstart") event.preventDefault();
     calculadoraPmv.classList.toggle("active");
     calculadoraEs.classList.toggle("active");
 };
