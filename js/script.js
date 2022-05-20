@@ -87,6 +87,7 @@ function calcularBonusPmv() {
 // Funcionalidade para alternar calculadoras
 let btnMudar = document.getElementById("btnMudar");
 btnMudar.addEventListener("click", changeCalculator);
+btnMudar.addEventListener("touchstart", changeCalculator);
 
 calculadoraEs.classList.add("active");
 
@@ -111,14 +112,22 @@ function abreES() {
 // referenciar os botões
 let calcular = document.getElementById("btCalcular");
 calcular.addEventListener("click", calcularBonus);
+calcular.addEventListener("touchstart", calcularBonus);
+
 let calcularPmv = document.getElementById("btCalcularPmv");
 calcularPmv.addEventListener("click", calcularBonusPmv);
+calcularPmv.addEventListener("touchstart", calcularBonusPmv);
+
 
 
 
 let apagar = document.getElementsByClassName("btnApagar")
 apagar[0].addEventListener("click", apagarResultado);
+apagar[0].addEventListener("touchstart", apagarResultado);
+
 apagar[1].addEventListener("click", apagarResultado);
+apagar[1].addEventListener("touchstart", apagarResultado);
+
 
 
 
