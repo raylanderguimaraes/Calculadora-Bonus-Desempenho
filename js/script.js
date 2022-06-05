@@ -6,6 +6,7 @@ let calculadoraPmv = document.getElementById("calculadora-pmv");
 
 let inSalario = document.getElementById("inSalario");
 let inImu = document.getElementById("inImu");
+let inFaltas = document.getElementById("inFaltas");
 
 let inSalarioPmv = document.getElementById("inSalarioPmv");
 let inImuPmv = document.getElementById("inImuPmv");
@@ -17,9 +18,15 @@ function calcularBonus(event) {
     // pegar valor dos input
     let salario = inSalario.value;
     let imu = (inImu.value / 100);
+    let faltasPercentual = (inFaltas.value * 10) / 100;
+    
+    
+         
     // calcular o valor
     let bonusCalculado = (salario * 1.5 * imu);
-    let dinheiro1 = bonusCalculado.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+    let bonusComFalta = bonusCalculado - bonusCalculado * faltasPercentual;
+    
+    let dinheiro1 = bonusComFalta.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
     
     // referenciar o resultado
     let outResultado = document.getElementById("outResultado");
@@ -35,6 +42,9 @@ function calcularBonus(event) {
     }
 
     if (event.type === 'touchstart') event.preventDefault();
+
+    console.log(bonusComFalta)
+
 }
 
 function apagarResultado() {
