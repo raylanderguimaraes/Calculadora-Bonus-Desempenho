@@ -19,21 +19,21 @@ function calcularBonus(event) {
     let salario = inSalario.value;
     let imu = (inImu.value / 100);
     let faltasPercentual = (inFaltas.value * 10) / 100;
-    
-    
-         
+
+
+
     // calcular o valor
     let bonusCalculado = (salario * 1.5 * imu);
     let bonusComFalta = bonusCalculado - bonusCalculado * faltasPercentual;
-    
+
     let dinheiro1 = bonusComFalta.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
-    
+
     // referenciar o resultado
     let outResultado = document.getElementById("outResultado");
-    
+
     // modificar resultado de saida
-    
-    
+
+
     if (salario == 0 || imu == 0) {
         alert("Preencha todos os campos");
         outResultado.textContent = "";
@@ -51,13 +51,13 @@ function apagarResultado() {
     outResultado.textContent = " "
     outResultadoPmv.textContent = " "
     limparCampos();
-    
-    
+
+
 }
 
 function limparCampos() {
-   let campos = document.getElementsByTagName("input")
-    for(campo of campos) {
+    let campos = document.getElementsByTagName("input")
+    for (campo of campos) {
         campo.value = '';
     }
 
@@ -70,33 +70,35 @@ function calcularBonusPmv(event) {
     let imuPmv = (inImuPmv.value / 100);
     let icdPmv = inIcdPmv.value;
     let fvaPmv = (inFvaPmv.value / 100);
-
-    // calcular bônus
-    //salário x 1,5 x IMU x ICD x FVA
     let bonusPmvCalculado = (salarioPmv * 1.5 * imuPmv * icdPmv * fvaPmv)
-    let dinheiro2 = bonusPmvCalculado.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
 
-    // referenciar o resultado PMV
-    let outResultadoPmv = document.getElementById("outResultadoPmv")
-
-    //modificar o resultado de saída PMV
 
     if (salarioPmv == 0 || imuPmv == 0) {
 
         alert("Preencha todos os campos");
-        outResultadoPmv.textContent = " ";
+        outResultadoPmv.innerHTML = `Não foi possível calcular o seu bônus, Preencha todos os campos!`
+    }
 
-    } else if (fvaPmv == 0) {
-        alert("Preencha todos os campos");
-        outResultadoPmv.textContent = " ";
+    if (fvaPmv <= 0.3) {
+        let bonusMinimo = (salarioPmv * 1.5 * imuPmv * icdPmv * 0.3);
+        let bonusFormatado = bonusMinimo.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+        let outResultadoPmv = document.getElementById("outResultadoPmv")
+        outResultadoPmv.innerHTML = `O valor do bônus é de ${bonusFormatado}`;
     } else {
-        outResultadoPmv.textContent = "O Valor do bônus à receber é de: " + dinheiro2;
+        let bonusFormatado2 = bonusPmvCalculado.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
+        outResultadoPmv.innerHTML = `O valor do bônus é de ${bonusFormatado2}`;
+
     }
 
     if (event.type === 'touchstart') event.preventDefault();
 
 
+
+
+
 }
+
+
 
 // Funcionalidade para alternar calculadoras
 let btnMudar = document.getElementById("btnMudar");
@@ -106,7 +108,7 @@ btnMudar.addEventListener("touchstart", changeCalculator);
 calculadoraEs.classList.add("active");
 
 function changeCalculator(event) {
-    if(event.type === "touchstart") event.preventDefault();
+    if (event.type === "touchstart") event.preventDefault();
     calculadoraPmv.classList.toggle("active");
     calculadoraEs.classList.toggle("active");
 };
