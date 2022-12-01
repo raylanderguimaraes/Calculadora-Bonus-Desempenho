@@ -86,7 +86,7 @@ function calcularBonusPmv(event) {
         alert("Preencha todos os campos");
         outResultadoPmv.textContent = " ";
 
-    } else if (icdPmv == 0 || fvaPmv == 0) {
+    } else if (fvaPmv == 0) {
         alert("Preencha todos os campos");
         outResultadoPmv.textContent = " ";
     } else {
