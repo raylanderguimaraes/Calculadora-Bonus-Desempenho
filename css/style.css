@@ -1,329 +1,319 @@
-@import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Roboto:wght@300;400;700&display=swap");
 
 /*======== GERAL=======*/
-
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-
-
+html,
 body {
-    color: rgb(82, 17, 82);
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/images/bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* object-fit: cover; */
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: #d3d3d3;
+  color: rgb(82, 17, 82);
+  font-family: "Roboto", sans-serif;
 }
 
+.container {
+  max-width: 100%;
+  margin: auto;
+  background-image: url(../assets/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
 
-
-/*Formatação Header e Menu */
+/* Formatação Header e Menu */
 #menu {
-    width: 100%;
-    height: 70px;
-    display: flex;
-    background-color: rgb(82, 17, 82);
-    padding-bottom: 5px;  
-
+  width: 100%;
+  height: 70px;
+  display: flex;
+  background-color: rgb(82, 17, 82);
+  padding-bottom: 5px;
 }
 
 .cabecalho {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 .logo {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: whitesmoke;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: whitesmoke;
 }
 
 #menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 #menu a {
-    text-decoration: none;
-    color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 #menu li {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #menu li:hover {
-    color: rgb(226, 226, 12);
-    transition-duration: .5s;
+  color: rgb(226, 226, 12);
+  transition-duration: 0.5s;
 }
 
-
 /*=======BTN-MOBILE=======*/
-
 #btn-mobile {
-    display: none;
-    border: none;
-    background-color: #fefefe;
-    padding: 8px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
+  display: none;
+  border: none;
+  background-color: #fefefe;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #btn-mobile:hover {
-    background-color: #d3d3d3;
-    color: #fff;
+  background-color: #d3d3d3;
+  color: #fff;
 }
 
 /* Formatação Parte Principal */
-
+.title-page {
+  padding-block: 2rem;
+}
 
 h1 {
-    text-align: center;
-    color: rgb(82, 17, 82);
-    font-size: 3rem;
-    margin-top: 3rem;
-
+  text-align: center;
+  color: rgb(82, 17, 82);
+  font-size: 3rem;
 }
 
 h2 {
-    text-align: center;
-    color: rgb(82, 17, 82);
-    font-size: 2rem;
-
+  text-align: center;
+  color: rgb(82, 17, 82);
+  font-size: 2rem;
 }
-
-
 
 .calculadora {
-    background-color: rgba(82, 17, 82, 0.9);
-    box-shadow: 1px 4px 4px 4px rgb(34, 33, 33);
-    color: #000;
-    max-width: 600px;
-    height: auto;
-    padding: 30px;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 20px;
-    display: none;
-
+  background-color: rgba(82, 17, 82, 0.9);
+  box-shadow: 1px 4px 4px 4px rgb(34, 33, 33);
+  color: #000;
+  max-width: 600px;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  display: none;
 }
 
-
-
 .calculadora h2 {
-    color: whitesmoke;
-    margin-bottom: 1.2rem;
-    opacity: 1;
+  color: whitesmoke;
+  margin-bottom: 1.2rem;
+  opacity: 1;
 }
 
 .active {
-    color: #000;
-    max-width: 600px;
-    height: auto;
-    padding: 30px;
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 20px;
-    display: block;
-    
+  color: #000;
+  max-width: 600px;
+  height: auto;
+  padding: 30px;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
 }
 
 /*Formatação Inputs */
-
 input {
-    display: block;
-    width: 100%;
-    padding: 14px;
-    margin-bottom: 5px;
-    border-radius: 8px;
-    border: none;
-    box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
 }
 
 /* Formatação Resultado */
 .resultado {
-    margin-top: 10px;
-    color: rgb(226, 226, 12);
+  margin-top: 10px;
+  color: rgb(226, 226, 12);
 }
 
-
-
 /* Formatação Informações */
-
 .informacoes {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 .informacoes p {
-    font-size: 18px;
-    font-weight: 500;
-    text-align: justify;
-
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .img-exemple {
-    width: 500px;
-    margin-left: 0;
-    margin-block: 15px;
-    
+  width: 100%;
+  max-width: 500px;
+  margin-left: 0;
+  margin-block: 15px;
 }
 
 .img-exemple img {
-    width: 100%;  
-    border-radius: 20px;
-    
+  width: 100%;
+  border-radius: 20px;
 }
 
 /* Formatação Botões */
-
 .btnToggle {
-    width: 180px;
-    height: auto;
-    text-align: center;
-    margin: auto;
-    margin-top: 20px;
-    box-sizing: border-box;
+  width: 180px;
+  height: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
 }
 
 #btnMudar {
-    width: 100%;
-    background-color: rgb(226, 226, 12);
-    padding: 8px;
-    margin: 10px;
-    margin-bottom: 110px;
-    font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    object-fit: contain;
+  width: 100%;
+  background-color: rgb(226, 226, 12);
+  padding: 8px;
+  margin: 10px;
+  margin-bottom: 110px;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  object-fit: contain;
 }
 
 #btnMudar:hover {
-    background-color: whitesmoke;
-    color: rgb(82, 17, 82);
-    transition: .8s;
-
+  background-color: whitesmoke;
+  color: rgb(82, 17, 82);
+  transition: 0.8s;
 }
 
 .btnsFuncoes {
-    max-width: 600px;
-    height: auto;
-    display: flex;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .btnsFuncoes button {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(226, 226, 12);
-    padding: 8px;
-    margin: 10px;
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-
-
-
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 226, 12);
+  padding: 8px;
+  margin: 10px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 
 .btnsFuncoes button:hover {
-    background-color: whitesmoke;
-    color: rgb(82, 17, 82);
-    transition: .8s;
+  background-color: whitesmoke;
+  color: rgb(82, 17, 82);
+  transition: 0.8s;
 }
 
 /*Formatação Rodapé */
-
 #rodape {
-    text-align: center;
-    margin-top: 30px;
-    padding: 18px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 18px;
 }
-
 
 span a {
-
-    color: rgb(82, 17, 82);
-    cursor: pointer;
+  color: rgb(82, 17, 82);
+  cursor: pointer;
 }
 
+@media (max-width: 688px) {
+  /* #menu {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    display: flex;
+  }
 
+  .cabecalho {
+    margin-top: 0;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 100;
+  }
 
-@media(max-width: 688px) {
+  #navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+    background-color: rgb(82, 17, 82);
+    padding: 20px;
+    width: 100%;
+  } */
 
-    #menu {
-        width: 100%;
-        height: 70px;
-        position: fixed;
-        top: 0;
+  .navigation-menu #btn-mobile {
+    display: none;
+  }
 
-        display: flex;
+  /* .container {
+    margin-top: 7rem;
+    padding: 0 20px;
+  } */
 
-    }
+  .quiz-container {
+    width: 100%;
+    margin-block: 3rem;
+    overflow-x: hidden;
+  }
 
-    .cabecalho {
-        
-        margin-top: 0;
-        position: fixed;
-        justify-content: space-between;
-        z-index: 100;
-    }
+  .quiz {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+  }
 
-    #navigation ul {
-        display: flex;
-    
-    }
+  .img-exemple {
+    width: 100%;
+    max-width: 380px;
+  }
+}
 
-    .navigation-menu #btn-mobile {
-        display: none;
-    }
+/* Additional Media Queries */
+@media (max-width: 600px) {
+  .buttons-action-container {
+    flex-direction: column;
+    width: 100%;
+  }
 
-
-    .container {
-        margin-top: 7rem;
-        padding: 0 20px;
-    }
-
-    .img-exemple {
-        width: 380px;
-
-    }
-
+  .action-button-quiz {
+    width: 100%;
+  }
 }

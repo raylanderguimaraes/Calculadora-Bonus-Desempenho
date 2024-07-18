@@ -37,7 +37,7 @@
             <div class="logo"> Cálculo Bônus Desempenho</div>
             <div id="navigation">
                 <nav class="navigation-menu">
-                    <button id="btn-mobile">Menu <span id="hamburger"></span></button>
+                    <!-- <button id="btn-mobile">Menu <span id="hamburger"></span></button> -->
 
                     <ul>
                         <a onclick="abreES()">
@@ -45,6 +45,9 @@
                         </a>
                         <a onclick="abrePmv()">
                             <li> Bônus PMV</li>
+                        </a>
+                        <a href="./pages/quiz.html">
+                            <li>Quiz Concurso (SERRA/ES)</li>
                         </a>
                     </ul>
 
@@ -56,9 +59,14 @@
     <main class="container">
 
 
-        <h1>Cálculo Bônus Desempenho Magistério</h1>
+
+        <div class="title-page">
+            <h1>Cálculo Bônus Desempenho Magistério</h1>
+        </div>
 
         <section id="calculadora-es" class="calculadora">
+
+
             <!--Fórmula: salário * 1,5 * IMU -->
 
             <div class="estado">
@@ -129,6 +137,8 @@
                 <h2 id="outResultadoPmv" class="resultado"></h2>
 
         </section>
+
+
 
         <div class="btnToggle">
             <button id="btnMudar">Alternar Calculadora</button>

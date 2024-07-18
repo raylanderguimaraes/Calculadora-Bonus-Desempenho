@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2354242354081236"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PK7XTMK');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/quizStyle.css">
+    <script src="../data/questions.js"></script>
+</head>
+
+<body>
+    <header id="menu">
+        <div class="cabecalho">
+            <div class="logo"> <a href="/">Cálculo Bônus Desempenho</a></div>
+            <div id="navigation">
+                <nav class="navigation-menu">
+                    <!-- <button id="btn-mobile">Menu <span id="hamburger"></span></button> -->
+                    <ul>
+                        <a href="/">
+                            <li>Voltar</li>
+                        </a>
+                    </ul>
+
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="quiz-container">
+        <div class="title-page">
+            <h1 style="text-align: center">Teste seus conhecimentos</h1>
+            <h3 style="text-align: center"> obs: os conhecimentos específicos são de Educação Física</h3>
+        </div>
+        <h2>Acertos <span id="score"></span><span id="tam-questoes"></span></h2>
+        <section class="quiz">
+        </section>
+        <section id="results">
+
+        </section>
+
+        <div class="buttons-action-container">
+            <button class="action-button-quiz" id="preview-question">Voltar</button>
+            <button class="action-button-quiz" id="next-question">Avançar</button>
+        </div>
+        <button class="action-button-quiz" id="reload-quiz">Recarregar Quiz</button>
+
+    </main>
+
+    <script src="../js/quiz.js"></script>
+</body>
+
+</html>
